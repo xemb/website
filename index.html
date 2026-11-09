@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex's Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Times New Roman', serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50vw;
+    }
+
+    th,
+    td {
+      border: 2px solid;
+      text-align: center;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .togfont {
+      margin-top: 10vh;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align: center; margin-bottom: 5vh;">
+    <h1>Lucian Alexander Marin</h1>
+    <p>A normal human being loves computer and programming without AI.</p>
+  </div>
+
+  <div class="info" style="margin-bottom: 5vh;">
+    <h3>basic info:</h3>
+    <table>
+      <tr>
+        <td>Graduated from</td>
+        <td>Guilin Tourism University</td>
+      </tr>
+      <tr>
+        <td>Majored in</td>
+        <td>Software Engineering</td>
+      </tr>
+      <tr>
+        <td>Degree</td>
+        <td>Bachelor of Engineering</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>emsendrecv@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="workset">
+    <h3>workset:</h3>
+    <table>
+      <tr>
+        <th>project</th>
+        <th>description</th>
+        <th>tags</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/xemb/pong" target="_blank">pong</a></td>
+        <td>A simple ping-pong game built with Raylib.</td>
+        <td>C, Raylib, game</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/xemb/handme" target="_blank">handme</a></td>
+        <td>A ligheweight LAN file transfer tool.</td>
+        <td>C, HTTP</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/xemb/tree" target="_blank">tree</a></td>
+        <td>tree prints the tree structure of the filesystem
+          of the directory you pass.</td>
+        <td>C, filesystem</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="togfont">
+    <p>
+      For accessibility,
+      sans-serif and serif font provided
+      <button id="tog">toggle</button>
+    </p>
+  </div>
+
+  <script>
+    const tog = document.getElementById('tog');
+    let sans = false;
+    tog.onclick = () => {
+      if (sans) {
+        document.body.style.fontFamily = '\'Times New Roman\', serif';
+      } else {
+        document.body.style.fontFamily = '\'Liberation Sans\', Arial, sans-serif';
+      }
+      sans = !sans;
+    };
+  </script>
+</body>
+
+</html>
