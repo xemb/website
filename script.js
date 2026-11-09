@@ -9,7 +9,7 @@ const words = [
   "complete", "concern", "confirm", "connect", "consider", "contain", "continue", "control",
   "cook", "copy", "count", "cover", "create", "cross", "cry", "cut",
   "damage", "dance", "deal", "decide", "deliver", "demand", "deny", "depend",
-  "describe", "design", "destroy", "develop", "die", "discover", "discuss", "divide",
+  "describe", "design", "destroy", "develop", "discover", "discuss", "divide",
   "do", "doubt", "draw", "dream", "drink", "drive", "drop", "earn",
   "eat", "encourage", "end", "enjoy", "enter", "escape", "expect", "explain",
   "express", "face", "fail", "fall", "feel", "fight", "fill", "find",
