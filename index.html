@@ -33,7 +33,6 @@
     }
 
     .togfont {
-      margin-top: 10vh;
       text-align: center;
     }
   </style>
@@ -67,7 +66,7 @@
     </table>
   </div>
 
-  <div class="workset">
+  <div class="workset" style="margin-bottom: 5vh;">
     <h3>workset:</h3>
     <table>
       <tr>
@@ -94,6 +93,11 @@
     </table>
   </div>
 
+  <div class="godsadvice" style="text-align: center; margin-bottom: 5vh;">
+    <h2 id="godsays">press the button to ask for some advice.</h2>
+    <button id="ask">ask</button>
+  </div>
+
   <div class="togfont">
     <p>
       For accessibility,
@@ -102,17 +106,7 @@
     </p>
   </div>
 
-  <script>
-    const tog = document.getElementById('tog');
-    let sans = false;
-    tog.onclick = () => {
-      if (sans) {
-        document.body.style.fontFamily = '\'Times New Roman\', serif';
-      } else {
-        document.body.style.fontFamily = '\'Liberation Sans\', Arial, sans-serif';
-      }
-      sans = !sans;
-    };
+  <script src="script.js">
   </script>
 </body>
 
