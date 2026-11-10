@@ -45,7 +45,7 @@ tog.onclick = () => {
   if (sans) {
     document.body.style.fontFamily = '\'Times New Roman\', serif';
   } else {
-    document.body.style.fontFamily = '\'Liberation Sans\', Arial, sans-serif';
+    document.body.style.fontFamily = 'Arial, sans-serif';
   }
   sans = !sans;
 };
