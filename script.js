@@ -56,3 +56,10 @@ ask.onclick = () => {
   let idx = Math.floor(Math.random() * words.length);
   godsays.textContent = words[idx];
 };
+
+// Drak theme detect
+const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (isDark) {
+  document.body.style.backgroundColor = '#333333';
+  document.body.style.color = '#cccccc';
+}
