@@ -37,4 +37,7 @@ const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (isDark) {
   document.body.style.backgroundColor = '#333333';
   document.body.style.color = '#cccccc';
+  document.querySelectorAll('a').forEach(link => {
+    link.style.color = 'yellow';
+  });
 }
